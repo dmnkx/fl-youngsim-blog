@@ -8,7 +8,7 @@ class IntroduceScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('자기소개'),
+        title: Image.asset('assets/images/logo.jpeg', height: 40),
         backgroundColor: Colors.white,
         elevation: 0,
       ),

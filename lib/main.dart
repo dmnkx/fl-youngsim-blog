@@ -1,4 +1,4 @@
-import 'package:fl_youngsim_blog/screens/intro_screen.dart';
+import 'package:fl_youngsim_blog/screens/album_screen.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -10,6 +10,11 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(debugShowCheckedModeBanner: false, home: IntroScreen());
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      // home: IntroScreen(),
+      home: AlbumScreen(),
+      theme: ThemeData(primarySwatch: Colors.blue),
+    );
   }
 }

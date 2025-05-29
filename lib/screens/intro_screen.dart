@@ -8,7 +8,8 @@ class IntroScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('인트로'),
+        title: Image.asset('assets/images/logo.jpeg', height: 40),
+        centerTitle: false,
         backgroundColor: Colors.white,
         elevation: 0,
       ),
