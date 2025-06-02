@@ -1,8 +1,18 @@
-import 'package:fl_youngsim_blog/screens/album_screen.dart';
+import 'package:fl_youngsim_blog/screens/desktop_layout.dart';
+import 'package:fl_youngsim_blog/screens/mobile_layout.dart';
+import 'package:fl_youngsim_blog/screens/response_layout.dart';
+import 'package:fl_youngsim_blog/themes/theme.dart';
+import 'package:fl_youngsim_blog/themes/theme_provider.dart';
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp(
+    ChangeNotifierProvider(
+      create: (_) => ThemeProvider(),
+      child: const MyApp(),
+    ),
+  );
 }
 
 class MyApp extends StatelessWidget {
@@ -13,8 +23,12 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       // home: IntroScreen(),
-      home: AlbumScreen(),
-      theme: ThemeData(primarySwatch: Colors.blue),
+      home: ResponseLayout(
+        mobileLayout: MobileLayout(),
+        desktopLayout: DesktopLayout(),
+      ),
+      theme: lightMode,
+      darkTheme: darkMode,
     );
   }
 }
