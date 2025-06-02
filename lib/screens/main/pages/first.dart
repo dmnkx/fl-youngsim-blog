@@ -16,11 +16,23 @@ class FirstPage extends StatelessWidget {
       child: Center(
         child: Stack(
           children: [
-            Image.asset(
-              'assets/images/001.jpeg',
-              fit: BoxFit.fitWidth,
-              width: double.infinity,
-              height: double.infinity,
+            ShaderMask(
+              shaderCallback:
+                  (bounds) => LinearGradient(
+                    colors: [
+                      Colors.black.withValues(alpha: 0.8),
+                      Colors.black.withValues(alpha: 0.2),
+                    ],
+                    begin: Alignment.topLeft,
+                    end: Alignment.bottomRight,
+                  ).createShader(bounds),
+              blendMode: BlendMode.darken,
+              child: Image.asset(
+                'assets/images/001.jpeg',
+                fit: BoxFit.fitWidth,
+                width: double.infinity,
+                height: double.infinity,
+              ),
             ),
             Positioned(
               bottom: 10,
