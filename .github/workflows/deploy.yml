@@ -22,7 +22,7 @@ jobs:
         run: flutter pub get
       
       - name: Build
-        run: flutter build web --base-href="/" --release
+        run: flutter build web --release
 
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
