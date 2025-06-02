@@ -74,7 +74,11 @@ class _DesktopLayoutState extends State<DesktopLayout> {
             },
             child: Text(
               'Gallery',
-              style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+              style: TextStyle(
+                fontSize: 18,
+                fontWeight: FontWeight.bold,
+                color: _selectedIndex == 2 ? Colors.blue : Colors.black,
+              ),
             ),
           ),
           TextButton(
@@ -85,7 +89,11 @@ class _DesktopLayoutState extends State<DesktopLayout> {
             },
             child: Text(
               'Contact',
-              style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+              style: TextStyle(
+                fontSize: 18,
+                fontWeight: FontWeight.bold,
+                color: _selectedIndex == 3 ? Colors.blue : Colors.black,
+              ),
             ),
           ),
           SizedBox(width: 100),

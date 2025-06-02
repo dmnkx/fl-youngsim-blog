@@ -12,7 +12,13 @@ class _ContactPageState extends State<ContactPage> {
   final viewModel = ContactPageViewModel();
 
   @override
+  void initState() {
+    super.initState();
+    viewModel.init();
+  }
+
+  @override
   Widget build(BuildContext context) {
-    return Container();
+    return Container(child: Text('Contact'));
   }
 }
