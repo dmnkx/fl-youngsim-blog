@@ -13,7 +13,7 @@ class FirstPage extends StatelessWidget {
     return Container(
       width: double.infinity,
       height: contentHeight,
-      color: Colors.red,
+      color: Colors.black,
       child: Center(
         child: Stack(
           children: [

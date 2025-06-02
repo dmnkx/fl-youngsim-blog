@@ -11,10 +11,11 @@ class ThirdPage extends StatelessWidget {
     return Container(
       width: double.infinity,
       height: contentHeight,
-      color: Colors.white,
+      color: Colors.grey[500],
       child: Row(
         children: [
           Expanded(
+            flex: 1,
             child: Center(
               child: SizedBox(
                 width: 500,
@@ -22,26 +23,31 @@ class ThirdPage extends StatelessWidget {
               ),
             ),
           ),
-          Column(
-            children: [
-              Container(
-                width: 800,
-                height: contentHeight,
-                color: Colors.grey[300],
-                child: Center(
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.center,
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: [
-                      Text('중성화', style: TextStyle(fontSize: 40)),
-                      Text('아픈 기억', style: TextStyle(fontSize: 40)),
-                      Text('집사의 저 표정', style: TextStyle(fontSize: 40)),
-                      Text('당황스럽다', style: TextStyle(fontSize: 40)),
-                    ],
+          Expanded(
+            flex: 1,
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              crossAxisAlignment: CrossAxisAlignment.center,
+              children: [
+                Center(
+                  child: Container(
+                    child: Padding(
+                      padding: const EdgeInsets.all(16.0),
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.center,
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          Text('중성화', style: TextStyle(fontSize: 40)),
+                          Text('아픈 기억', style: TextStyle(fontSize: 40)),
+                          Text('집사의 저 표정', style: TextStyle(fontSize: 40)),
+                          Text('당황스럽다', style: TextStyle(fontSize: 40)),
+                        ],
+                      ),
+                    ),
                   ),
                 ),
-              ),
-            ],
+              ],
+            ),
           ),
         ],
       ),

@@ -1,0 +1,3 @@
+class GalleryPageViewModel {
+  void init() {}
+}

@@ -1,0 +1,3 @@
+class ContactPageViewModel {
+  void init() {}
+}
