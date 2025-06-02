@@ -36,7 +36,7 @@ class _MainPageState extends State<MainPage> {
           width: double.infinity,
           decoration: BoxDecoration(
             gradient: LinearGradient(
-              colors: [Colors.green, Colors.lightGreen],
+              colors: [Colors.grey[500]!, Colors.grey[900]!],
               begin: Alignment.bottomLeft,
               end: Alignment.topRight,
             ),
