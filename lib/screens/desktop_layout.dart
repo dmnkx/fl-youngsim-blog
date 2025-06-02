@@ -14,6 +14,7 @@ class _DesktopLayoutState extends State<DesktopLayout> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        backgroundColor: Colors.white,
         title: Row(
           children: [
             SizedBox(width: 50),
@@ -25,10 +26,10 @@ class _DesktopLayoutState extends State<DesktopLayout> {
         bottom: PreferredSize(
           preferredSize: Size.fromHeight(menuHeight),
           child: Container(
-            height: 100,
+            height: menuHeight,
             color: Colors.white,
             child: Padding(
-              padding: const EdgeInsets.all(16.0),
+              padding: const EdgeInsets.all(8.0),
               child: Row(
                 spacing: 50,
                 children: [
@@ -38,7 +39,7 @@ class _DesktopLayoutState extends State<DesktopLayout> {
                     child: Text(
                       'Home',
                       style: TextStyle(
-                        fontSize: 32,
+                        fontSize: 18,
                         fontWeight: FontWeight.bold,
                       ),
                     ),
@@ -48,7 +49,7 @@ class _DesktopLayoutState extends State<DesktopLayout> {
                     child: Text(
                       'About',
                       style: TextStyle(
-                        fontSize: 32,
+                        fontSize: 18,
                         fontWeight: FontWeight.bold,
                       ),
                     ),
@@ -58,7 +59,7 @@ class _DesktopLayoutState extends State<DesktopLayout> {
                     child: Text(
                       'Contact',
                       style: TextStyle(
-                        fontSize: 32,
+                        fontSize: 18,
                         fontWeight: FontWeight.bold,
                       ),
                     ),

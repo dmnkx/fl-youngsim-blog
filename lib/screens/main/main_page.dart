@@ -30,7 +30,6 @@ class _MainPageState extends State<MainPage> {
 
   @override
   Widget build(BuildContext context) {
-    final contentHeight = MediaQuery.of(context).size.height - 200;
     return Stack(
       children: [
         Container(
@@ -45,9 +44,6 @@ class _MainPageState extends State<MainPage> {
           child: PageView(
             controller: _pageController,
             scrollDirection: Axis.vertical,
-            physics: const ClampingScrollPhysics(
-              parent: BouncingScrollPhysics(),
-            ),
             onPageChanged: (index) {
               setState(() {});
             },
