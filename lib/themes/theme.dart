@@ -3,21 +3,24 @@ import 'package:flutter/material.dart';
 ThemeData lightMode = ThemeData(
   brightness: Brightness.light,
   colorScheme: ColorScheme.light(
-    primary: Colors.black,
-    secondary: Colors.black,
+    primary: Colors.black, // 메인 텍스트 색상
+    secondary: Colors.green,
     surface: Colors.white,
   ),
   textTheme: lightTextTheme,
+  scaffoldBackgroundColor: Colors.white,
+  appBarTheme: AppBarTheme(backgroundColor: Colors.white),
 );
 
 ThemeData darkMode = ThemeData(
   brightness: Brightness.dark,
   colorScheme: ColorScheme.dark(
-    primary: Colors.black,
-    secondary: Colors.black,
+    primary: Colors.blue,
+    secondary: Colors.yellow,
     surface: Colors.black,
   ),
   textTheme: darkTextTheme,
+  appBarTheme: AppBarTheme(backgroundColor: Colors.white),
 );
 
 TextTheme lightTextTheme = TextTheme(

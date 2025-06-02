@@ -28,7 +28,7 @@ class MyApp extends StatelessWidget {
         desktopLayout: DesktopLayout(),
       ),
       theme: lightMode,
-      darkTheme: darkMode,
+      darkTheme: lightMode,
     );
   }
 }

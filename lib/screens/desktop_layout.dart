@@ -14,61 +14,40 @@ class _DesktopLayoutState extends State<DesktopLayout> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.white,
-        title: Row(
-          children: [
-            SizedBox(width: 50),
-            Image.asset('assets/images/logo.jpeg', height: 50),
-          ],
-        ),
-        centerTitle: false,
-        toolbarHeight: titleHeight,
-        bottom: PreferredSize(
-          preferredSize: Size.fromHeight(menuHeight),
-          child: Container(
-            height: menuHeight,
-            color: Colors.white,
-            child: Padding(
-              padding: const EdgeInsets.all(8.0),
-              child: Row(
-                spacing: 50,
-                children: [
-                  SizedBox(width: 0),
-                  TextButton(
-                    onPressed: () {},
-                    child: Text(
-                      'Home',
-                      style: TextStyle(
-                        fontSize: 18,
-                        fontWeight: FontWeight.bold,
-                      ),
-                    ),
-                  ),
-                  TextButton(
-                    onPressed: () {},
-                    child: Text(
-                      'About',
-                      style: TextStyle(
-                        fontSize: 18,
-                        fontWeight: FontWeight.bold,
-                      ),
-                    ),
-                  ),
-                  TextButton(
-                    onPressed: () {},
-                    child: Text(
-                      'Contact',
-                      style: TextStyle(
-                        fontSize: 18,
-                        fontWeight: FontWeight.bold,
-                      ),
-                    ),
-                  ),
-                ],
-              ),
+        title: Image.asset('assets/images/logo.png', height: 50),
+        actions: [
+          TextButton(
+            onPressed: () {},
+            child: Text(
+              'Home',
+              style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
             ),
           ),
-        ),
+          TextButton(
+            onPressed: () {},
+            child: Text(
+              'Introduce',
+              style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+            ),
+          ),
+          TextButton(
+            onPressed: () {},
+            child: Text(
+              'Gallery',
+              style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+            ),
+          ),
+          TextButton(
+            onPressed: () {},
+            child: Text(
+              'Contact',
+              style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+            ),
+          ),
+          SizedBox(width: 100),
+        ],
+        centerTitle: false,
+        toolbarHeight: titleHeight,
       ),
       body: MainPage(),
     );

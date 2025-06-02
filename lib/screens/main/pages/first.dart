@@ -1,4 +1,5 @@
 import 'package:fl_youngsim_blog/screens/dimensions.dart';
+import 'package:fl_youngsim_blog/screens/main/components/outline_text.dart';
 import 'package:flutter/material.dart';
 
 class FirstPage extends StatelessWidget {
@@ -37,13 +38,7 @@ class FirstPage extends StatelessWidget {
             Positioned(
               bottom: 10,
               left: 10,
-              child: Text(
-                '별이 이쁘다',
-                style: TextStyle(
-                  fontSize: 32,
-                  shadows: [Shadow(color: Colors.white, offset: Offset(1, 1))],
-                ),
-              ),
+              child: OutlineText(text: '별이 이쁘다'),
             ),
           ],
         ),

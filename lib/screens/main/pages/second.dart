@@ -1,4 +1,5 @@
 import 'package:fl_youngsim_blog/screens/dimensions.dart';
+import 'package:fl_youngsim_blog/screens/main/components/shadow_text.dart';
 import 'package:flutter/material.dart';
 
 class SecondPage extends StatelessWidget {
@@ -38,33 +39,9 @@ class SecondPage extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.center,
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  Text(
-                    '별이 이쁘다',
-                    style: TextStyle(
-                      fontSize: 32,
-                      shadows: [
-                        Shadow(color: Colors.white, offset: Offset(1, 1)),
-                      ],
-                    ),
-                  ),
-                  Text(
-                    '레미 이쁘다',
-                    style: TextStyle(
-                      fontSize: 32,
-                      shadows: [
-                        Shadow(color: Colors.white, offset: Offset(1, 1)),
-                      ],
-                    ),
-                  ),
-                  Text(
-                    '완전 사랑스럽다.',
-                    style: TextStyle(
-                      fontSize: 32,
-                      shadows: [
-                        Shadow(color: Colors.white, offset: Offset(1, 1)),
-                      ],
-                    ),
-                  ),
+                  ShadowText(text: '별이 이쁘다'),
+                  ShadowText(text: '레미 이쁘다'),
+                  ShadowText(text: '완전 사랑스럽다.'),
                 ],
               ),
             ),
